@@ -1,0 +1,39 @@
+            animation-delay: 0.5s;
+        }
+        .balloon:nth-child(3) {
+            left: 60%;
+            background-color: #3357ff;
+            animation-delay: 1s;
+        }
+        .balloon:nth-child(4) {
+            left: 80%;
+            background-color: #ff33a1;
+            animation-delay: 1.5s;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Selamat Ulang Tahun, Aurelia!</h1>
+    <p>Hari ini kamu berumur 19 tahun!</p>
+    <p>Semoga semua impianmu tercapai!</p>
+    
+    <div class="balloons">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+    </div>
+    <img src="https://example.com/birthday-cake.png" alt="Kue Ulang Tahun" class="birthday-cake">
+    
+    <p>Rayakan hari istimewa ini dengan penuh kebahagiaan!</p>
+</body>
+</html>
